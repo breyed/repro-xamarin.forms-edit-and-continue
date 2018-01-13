@@ -14,8 +14,9 @@ namespace ClassLibrary1
 	{
 		public Page1()
 		{
+			BindingContext = this;
 			InitializeComponent();
-			listView.ItemsSource = new[] { new ListItem { Hello = "Hello world 3" } };
+			listView.ItemsSource = new [] { new ListItem { Hello = "Hello world" } };
 		}
 	}
 }
